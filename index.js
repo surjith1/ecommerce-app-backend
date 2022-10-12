@@ -22,7 +22,10 @@ const PORT = 3001;
 
     app.use(
       cors({
-        origin: ["http://localhost:3000", "http://localhost:3001"],
+        origin: [
+          "https://surjith-ecommerce-app.netlify.app",
+          "https://surjith-ecommerce-app.herokuapp.com",
+        ],
       })
     );
     app.use(express.json());
